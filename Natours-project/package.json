@@ -1,12 +1,13 @@
 {
   "name": "natours-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learning node,express,mongoDB and other 3rd pt packages",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js",
+    "start": "node server.js",
+    "start:dev": "nodemon server.js",
+    "start:prod": "Set NODE_ENV=production & nodemon server.js",
     "debug": "ndb server.js"
   },
   "author": "Oguzhan ULUN",
@@ -29,5 +30,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.4"
+  },
+  "engines": {
+    "node": "^18"
   }
 }
